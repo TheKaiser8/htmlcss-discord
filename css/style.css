@@ -111,7 +111,7 @@
     justify-content: center;
 }
 .main-nav ul li {
-    margin: 0 10px;
+    margin: 0 20px;
 }
 .main-nav ul li a {
     text-decoration: none;
@@ -135,6 +135,10 @@
 }
 .title {
     margin: 40px;
+    font-size: 35px;
+}
+.text-title {
+    line-height: 25px;
 }
 .button {
     border-radius: 25px;
@@ -145,14 +149,21 @@
 .login .button {
     background-color: white;
     color: #23272A;
+    padding: 10px;
 }
 .button-row {
     margin-top: 20px;
 }
-
+.button-row > .button {
+    font-size: 16px;
+    margin: 0 10px;
+}
 .button.left {
     color: #23272A;
     background-color: white;
+}
+.fa-solid.fa-down-long {
+    color: #23272A;
 }
 .button.right {
     background-color: #23272A;
