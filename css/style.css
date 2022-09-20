@@ -18,7 +18,7 @@
 }
 .debug .header-top .row > * {
     padding: 14px;
-    border: 2px dashed black;
+    border: 2px dashed;
     /* line-height: 50px; */
 }
 .debug .header-bottom {
@@ -29,31 +29,48 @@
     background-color: #ee82ee;
     border: 2px dashed;
 }
+.debug section .row {
+    height: 400px;
+}
+.debug section .row > * {
+    border: 2px dashed;
+}
 .debug .col-big {
     background-color: #1e90ff;
 }
 .debug .col-small {
     background-color: #ffc0cb;
 }
-.debug .huge-row {
+.debug section:last-child .container {
     height: 900px;
     background-color: #228b22;
+    border: 2px dashed;
 }
 .debug footer {
     background-color: #23272a;
 }
-.debug .footer-top-row {
+.debug .footer-top > .row {
     height: 580px;
+    border: 2px dashed;
 }
-.debug .foot-col-big {
+.debug .footer-top .row .col-small {
     background-color: #f08080;
 }
-.debug .foot-small {
+.debug .footer-top .col-big {
     background-color: #20b2aa;
 }
-.debug .footer-bottom-row {
+.debug .footer-top .col-big .sub-columns {
+    border: 2px dashed white;
+}
+.debug .footer-bottom .row {
     height: 80px;
     background-color: #7fffd4;
+}
+.debug .footer-logo, .button {
+    background-color: #ffb6c1;
+    line-height: 37px;
+    border: 2px dashed;
+    padding: 0 14px;
 }
 
 /*------------
@@ -115,15 +132,13 @@ section {
 section:nth-child(even) {
     background-color: #d3d3d3;
 }
-.row {
-    display: flex;
-}
 .col-big {
     width: 60%;
 }
 .col-small {
     width: 40%;
 }
+
 /*------------
     FOOTER
 --------------*/
@@ -135,19 +150,15 @@ footer {
     padding-bottom: 40px;
     border-bottom: 1px solid #9a9a9a;
 }
-.footer-top-row {
-    display: flex;
-}
-.box.foot-col-big {
+.col-small {
     width: 24%;
 }
-.box.foot-small {
+.col-big {
     width: 76%;
     display: flex;
 }
-.foot-col-small {
+.sub-columns {
     width: 25%;
-    border: 2px dashed white;
 }
 .footer-bottom {
     border-width: 1px 0;
@@ -155,12 +166,7 @@ footer {
     border-color: white;
     padding-top: 30px;
 }
-.footer-bottom-row {
-    display: flex;
+.footer-bottom .row {
     justify-content: space-between;
     align-items: center;
-}
-.footer-logo, .button {
-    background-color: #ffb6c1;
-    line-height: 37px;
 }
