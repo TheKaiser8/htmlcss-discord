@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    color: white;
 }
 
 /*------------
@@ -23,26 +22,26 @@
     border: 2px dashed;
     line-height: 50px;
 } */
-.debug .header-bottom {
+/* .debug .header-bottom {
     background-color: #00008b;
-}
-.debug .hero {
+} */
+/* .debug .hero {
     height: 400px;
-    /* background-color: #ee82ee; */
-    /* border: 2px dashed; */
-}
+    background-color: #ee82ee;
+    border: 2px dashed;
+} */
 .debug section .row {
     height: 400px;
 }
-.debug section .row > * {
+/* .debug section .row > * {
     border: 2px dashed;
-}
-.debug .col-big {
+} */
+/* .debug .col-big {
     background-color: #1e90ff;
-}
-.debug .col-small {
+} */
+/* .debug .col-small {
     background-color: #ffc0cb;
-}
+} */
 .debug section:last-child .container {
     height: 900px;
     background-color: #228b22;
@@ -91,6 +90,7 @@
 --------------*/
 .header-top .row > * {
     padding: 14px;
+    color: white;
 }
 .header-top {
     padding: 17px 0;
@@ -127,6 +127,7 @@
     padding: 50px 0;
     background-image: url('../img/jumbo.png');
     background-size: cover;
+    color: white;
 }
 .hero {
     width: 70%;
@@ -162,11 +163,9 @@
     color: #23272A;
     background-color: white;
 }
-.fa-solid.fa-down-long {
-    color: #23272A;
-}
 .button.right {
     background-color: #23272A;
+    color: white;
 }
 /*------------
     MAIN
@@ -175,15 +174,20 @@ section {
     padding: 50px 0;
 }
 section:nth-child(even) {
-    background-color: #d3d3d3;
+    background-image: url('../img/wave.svg');
+    background-size: cover;
 }
-.col-big {
+section .row .col-big {
     width: 60%;
 }
-.col-small {
+section .row .col-small {
     width: 40%;
+    padding: 35px 100px;
 }
-
+.title-section {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
 /*------------
     FOOTER
 --------------*/
