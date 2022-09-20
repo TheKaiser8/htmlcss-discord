@@ -42,11 +42,11 @@
 /* .debug .col-small {
     background-color: #ffc0cb;
 } */
-.debug section:last-child .container {
+/* .debug section:last-child .container {
     height: 900px;
     background-color: #228b22;
     border: 2px dashed;
-}
+} */
 .debug footer {
     background-color: #23272a;
 }
@@ -141,6 +141,10 @@
 .text-title {
     line-height: 25px;
 }
+
+/*------------
+    BUTTONS
+--------------*/
 .button {
     border-radius: 25px;
     cursor: pointer;
@@ -167,6 +171,7 @@
     background-color: #23272A;
     color: white;
 }
+
 /*------------
     MAIN
 --------------*/
@@ -187,6 +192,9 @@ section .row .col-small {
 .title-section {
     font-size: 32px;
     margin-bottom: 30px;
+}
+.section:last-child .container {
+    height: 900px;
 }
 /*------------
     FOOTER
